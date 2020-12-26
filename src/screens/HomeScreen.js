@@ -25,13 +25,20 @@ const HomeScreen = ({navigation}) => {
     title="Go to Color Demo"
     onPress={()=> navigation.navigate('Color')} 
     />
+    <Button 
+    title="Go to Color Customizer Demo"
+    onPress={()=> navigation.navigate('ColorCustomizer')} 
+    />
   </View>
   );
 };
 
 const styles = StyleSheet.create({
   text: {
-    fontSize: 30
+    fontSize: 30,
+    alignSelf: 'center',
+    fontWeight: 'bold',
+    margin: 15
   }
 });
 

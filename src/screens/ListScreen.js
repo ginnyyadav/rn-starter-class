@@ -15,6 +15,7 @@ const ListScreen = () => {
     ]
     return (
         <FlatList
+            style={{alignSelf: 'center', marginTop: 15}}
             keyExtractor={(friend) => friend.name} 
             data={friends} 
             renderItem={({item}) => {
